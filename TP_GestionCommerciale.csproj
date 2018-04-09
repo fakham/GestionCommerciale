@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BC02F1BF-2ECE-4CFA-98A4-26D1313DF859}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TP_GestionCommerciale</RootNamespace>
+    <AssemblyName>TP_GestionCommerciale</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CrystalReport_Clients.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport_Clients.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReport_NombreCommandesParClient.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport_NombreCommandesParClient.rpt</DependentUpon>
+    </Compile>
+    <Compile Include="Form_ClientRapport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_ClientRapport.Designer.cs">
+      <DependentUpon>Form_ClientRapport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_DetailCommande.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_DetailCommande.Designer.cs">
+      <DependentUpon>Form_DetailCommande.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_ListeClientsParVille.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_ListeClientsParVille.Designer.cs">
+      <DependentUpon>Form_ListeClientsParVille.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_ListeCommandesParClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_ListeCommandesParClient.Designer.cs">
+      <DependentUpon>Form_ListeCommandesParClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_ListeNomsClients.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_ListeNomsClients.Designer.cs">
+      <DependentUpon>Form_ListeNomsClients.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_MAJ_Article.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_MAJ_Article.Designer.cs">
+      <DependentUpon>Form_MAJ_Article.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_MAJ_Client.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_MAJ_Client.Designer.cs">
+      <DependentUpon>Form_MAJ_Client.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Menu.Designer.cs">
+      <DependentUpon>Form_Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_NombreClientsParVille.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_NombreClientsParVille.Designer.cs">
+      <DependentUpon>Form_NombreClientsParVille.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_RechercheArticle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_RechercheArticle.Designer.cs">
+      <DependentUpon>Form_RechercheArticle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CrystalReport_Clients.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport_Clients.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport_NombreCommandesParClient.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport_NombreCommandesParClient.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_ClientRapport.resx">
+      <DependentUpon>Form_ClientRapport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_DetailCommande.resx">
+      <DependentUpon>Form_DetailCommande.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_ListeClientsParVille.resx">
+      <DependentUpon>Form_ListeClientsParVille.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_ListeCommandesParClient.resx">
+      <DependentUpon>Form_ListeCommandesParClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_ListeNomsClients.resx">
+      <DependentUpon>Form_ListeNomsClients.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_MAJ_Article.resx">
+      <DependentUpon>Form_MAJ_Article.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_MAJ_Client.resx">
+      <DependentUpon>Form_MAJ_Client.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Menu.resx">
+      <DependentUpon>Form_Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_NombreClientsParVille.resx">
+      <DependentUpon>Form_NombreClientsParVille.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_RechercheArticle.resx">
+      <DependentUpon>Form_RechercheArticle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
